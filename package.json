@@ -18,8 +18,9 @@
   "homepage": "https://github.com/lawrencesnead/User-Story-Creator#readme",
   "dependencies": {
     "axios": "^0.19.1",
-    "fs": "0.0.1-security",
+    "fs-extra": "^8.1.0",
+    "handlebars": "^4.7.2",
     "inquirer": "^7.0.3",
-    "pdfkit": "^0.11.0"
+    "puppeteer": "^2.0.0"
   }
 }

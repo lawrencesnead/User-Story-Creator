@@ -1,0 +1,78 @@
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: auto;
+    height: max-content;
+    margin: auto;
+    text-align: center;
+    background-color: blue;
+  }
+    .card1 {
+        
+        width: max-content;
+        margin: auto;
+        margin-top: 10px;
+        text-align: center;
+        background-color: blue;
+        border-radius: 5px;
+        padding: 8px 8px 8px 8px;
+    }
+    .card-followers {
+        float:left;
+    }
+    .card-following {
+        float: right;
+    }
+  
+  .container {
+      background-color: rgba(0, 153, 255, 0.952);
+      height: max-content;
+  }
+
+  .title {
+    color: black;
+    font-size: 18px;
+  }
+  
+  
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+</style>
+</head>
+<div class="card">
+  <div class="container">
+  <img src={{image}} style="width:200px; margin-left:auto; margin-right:auto; display:block; border-radius:50%; ">
+  <h1>Hello! I am {{name}}</h1>
+  <p class="title">Employer: {{job}}</p>
+  <a href='https://www.google.com/maps/search/?api=1&query={{location}}'>{{location}}</a>
+  </div>
+  <p>{{bio}}</p>
+  <div class="container">
+  <a href={{profile}} style="float:left">GitHub <i class="fa fa-github"></i></a>
+  <a href={{blog}} style="float:right">Blog</a>
+  <div class="card1">
+  <h3>GitHub Public Repositories:</h3>
+  <p>{{repos}}</p>
+  </div>
+  <div class="card1">
+  <a href={{starsURL}}><h3>GitHub Stars:</h3>
+  <p>{{stars}}</p></a>
+  </div>
+  </div>
+  <div class="container">
+  <div class="card1 card-followers">
+  <h3>Followers:</h3>
+  <p>{{followers}}</p>
+  </div>
+  <div class="card1 card-following">
+  <h3>Following:</h3>
+  <p>{{following}}</p>
+  </div>
+  </div>
+  
+</div>
